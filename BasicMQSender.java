@@ -38,8 +38,7 @@ public class BasicMQSender {
 		Session session = null;
 		
 		try {
-			session = 
-					con.createSession(true, Session.AUTO_ACKNOWLEDGE);
+			session = con.createSession(true, Session.AUTO_ACKNOWLEDGE);
 
 			Queue queue = session.createQueue(queueName);
 
